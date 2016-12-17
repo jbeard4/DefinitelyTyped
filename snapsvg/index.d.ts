@@ -301,7 +301,7 @@ declare namespace Snap {
         isSimple: boolean;
     }
 
-    interface Paper extends Snap.Element {
+    export interface Paper extends Snap.Element {
         clear():void;
         el(name:string, attr:Object):Snap.Element;
         filter(filstr:string):Snap.Element;
@@ -392,3 +392,5 @@ declare namespace Snap {
         bez2:Array<number>
     }
 }
+
+export = Snap;
